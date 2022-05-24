@@ -1,0 +1,23 @@
+@import "/src/Styles/main";
+
+.confirm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .phrase {
+    display: flex;
+    gap: 5px;
+    .delete-word {
+      color: $color-purple;
+    }
+  }
+  input {
+    margin-bottom: 20px;
+    padding: 1em 0.5em;
+    font-size: 1em;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+@import "/src/Styles/main";
+
+.button {
+  margin-top: auto;
+  border: none;
+  padding: 10px;
+  color: $color-white;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-self: stretch;
+  text-align: center;
+  user-select: none;
+}
+
+.accept {
+  background-color: $color-light-blue;
+  &:active {
+    background-color: $color-light-blue-transparent-60;
+  }
+}
+
+.cancel {
+  background-color: $color-light-purple;
+  &:active {
+    background-color: $color-purple;
+  }
+}
+
+.disabled {
+  display: none;
+}

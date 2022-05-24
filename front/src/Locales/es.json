@@ -1,0 +1,86 @@
+{
+  "login": {
+    "title": "Entrar",
+    "username-placeholder": "Nombre de usuario",
+    "password-placeholder": "Contraseña",
+    "button": "Entrar",
+    "link": "¿No tienes cuenta?",
+    "error-msg-login": "Usuario o contraseña incorrecto."
+  },
+  "register": {
+    "title": "Registro",
+    "name-placeholder": "Nombre",
+    "surname-placeholder": "Apellidos",
+    "mail-placeholder": "Email",
+    "username-placeholder": "Nombre de usuario",
+    "password-placeholder": "Contraseña",
+    "repeat-password-placeholder": "Repetir contraseña",
+    "button": "Registrarse",
+    "error-msg-fields": "Por favor rellena todos los campos.",
+    "error-msg-passwords": "Ambas contraseñas deben de coincidir.",
+    "error-msg-repeated-user": "Usuario ya existente.",
+    "link": "¿Tienes cuenta?"
+  },
+  "modal": {
+    "input-new-calendar": "Nuevo nombre de calendario.",
+    "calendar-title": "Evento para {{date}}",
+    "calendar-event-title": "Titulo del calendario",
+    "calendar-event-description": "Descripción del calendario",
+    "invitation-link": "Enlace de invitación",
+    "copy-link": "Copiar Enlace"
+  },
+  "buttons": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "invite-friend": "Invitar amigos",
+    "delete-calendar": "Borrar calendario",
+    "yes": "Si",
+    "no": "No",
+    "exit": "Salir",
+    "update": "Actualizar",
+    "delete": "Borrar"
+  },
+  "months": {
+    "january": "Enero",
+    "february": "Febrero",
+    "march": "Marzo",
+    "april": "Abril",
+    "may": "Mayo",
+    "june": "Junio",
+    "july": "Julio",
+    "august": "Agosto",
+    "september": "Septiembre",
+    "october": "Octubre",
+    "november": "Noviembre",
+    "december": "Diciembre"
+  },
+  "weekdays": {
+    "sunday": "Domingo",
+    "monday": "Lunes",
+    "tuesday": "Martes",
+    "thursday": "Miercoles",
+    "wednesday": "Jueves",
+    "friday": "Viernes",
+    "saturday": "Sabado"
+  },
+  "invite": {
+    "text": "te está invitando a su calendario",
+    "error": "Este calendario no existe, comprueba que la invitación es valida."
+  },
+  "calendar": {
+    "delete-friend-text": "¿Quieres eliminar a {{friend}} de este calendario?",
+    "modal-delete-friend": "Alguien te borró de este calendario.",
+    "modal-delete-calendar": "Alguien borró de calendario.",
+    "friends-title": "Amigos",
+    "toast-friend-delete": "{{friend}} ha sido eliminado de este calendario."
+  },
+  "main-calendar": {
+    "new-calendar": "Nuevo calendario"
+  },
+  "toast": {
+    "copy-to-clipboard": "Copiado al portapapeles"
+  },
+  "confirm-delete":"CONFIRMAR",
+  "confirm-text-1":"Por favor, escriba",
+  "confirm-text-2":"para eliminar este calendario"
+}

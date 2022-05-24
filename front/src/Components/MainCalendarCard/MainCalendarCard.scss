@@ -1,0 +1,115 @@
+@import "/src/Styles/main";
+
+.calendar-card {
+  border: 1px solid $color-green;
+  padding: 20px 15px;
+  border-radius: 10px;
+  background-color: $color-light-green;
+  color: $color-black;
+  user-select: none;
+  cursor: pointer;
+  word-break: break-all;
+  display: flex;
+  align-items: center;
+  &:hover {
+    border: 1px solid $color-light-green;
+    background-color: $color-green;
+    color: $color-white;
+  }
+  &:active {
+    border: 1px solid $color-green;
+    background-color: $color-light-green;
+    color: $color-black;
+  }
+
+  .add-new-calendar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .add-icon {
+    font-size: 2em;
+  }
+}
+.new-calendar-input {
+  font-weight: 300;
+  outline: none;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid $color-black;
+  width: 70%;
+  align-self: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.save-button {
+  margin: 30px 0;
+  width: 50%;
+  align-self: center;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  background-color: $color-light-blue;
+  color: $color-white;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:active {
+    background-color: $color-light-blue-transparent-60;
+  }
+}
+.input-error {
+  border: 1px solid $color-purple;
+}
+
+.close-modal-button {
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.2s all ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  .invite-link {
+    &-title{
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    display: flex;
+    gap: 0;
+    width: calc(70% + 20px);
+    margin: auto;
+    input {
+      margin: auto 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: none;
+    } 
+    button {
+      white-space: nowrap;
+      align-self: center;
+      border-radius: 0 20px 20px 0;
+      border: 1px solid black;
+      border-left: none;
+      padding: 10px;
+      background-color: $color-light-blue;
+      color: $color-white;
+      font-weight: 500;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:active {
+        background-color: $color-light-blue-transparent-60;
+      }
+    }
+  }
+}
+

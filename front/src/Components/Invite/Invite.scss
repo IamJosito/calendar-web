@@ -1,0 +1,27 @@
+@import "/src/Styles/main";
+.invitation-text {
+  text-align: center;
+  font-size: 1.2rem;
+  &-highlight {
+    color: $color-purple;
+  }
+}
+
+.invitation-container {
+  & > button {
+    margin: 20px 0 0;
+    width: 50%;
+    align-self: center;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: $color-light-blue;
+    color: $color-white;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:active {
+      background-color: $color-light-blue-transparent-60;
+    }
+  }
+}

@@ -1,0 +1,194 @@
+@import "/src/Styles/main";
+
+.calendar {
+  height: calc(100vh - $header-height);
+  display: flex;
+}
+
+.calendar-friends {
+  width: 20%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-right: 1px solid $color-purple;
+  gap: 20px;
+  font-size: 1.3rem;
+  user-select: none;
+  align-items: center;
+  &-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto;
+  }
+}
+
+.btn-group {
+  margin-top: auto;
+  width: 100%;
+}
+
+.calendar-data {
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px 15px;
+  height: calc(100% - $header-height);
+}
+.calendar-day-name {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  height: fit-content;
+  gap: 5px;
+}
+
+.calendar-month-name {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  user-select: none;
+  font-size: 1.5em;
+  & > span {
+    width: 200px;
+  }
+  & > .arrow {
+    transition: 0.1s ease all;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.friend-name {
+  color: $color-purple;
+}
+
+.modal-calendar-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  & > .btn-group {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    & > * {
+      width: 100%;
+    }
+  }
+}
+
+.modal-events {
+  .event-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 10px;
+    > .event {
+      display: flex;
+      border: 1px solid $color-grey;
+      border-radius: 5px;
+      gap: 10px;
+      padding: 1em;
+      justify-content: space-between;
+      background-color: $color-light-grey;
+      cursor: pointer;
+      transition: 0.1s ease all;
+      user-select: none;
+      &:hover {
+        background-color: $color-light-grey-2;
+      }
+      &:active {
+        background-color: $color-grey;
+      }
+    }
+  }
+}
+
+.go-back-modal-button {
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.2s all ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.invite-link {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .calendar {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .calendar-friends {
+    width: 100%;
+    border-top: 2px solid $color-light-purple;
+  }
+
+  .calendar-data {
+    width: 100%;
+    padding: 0;
+    margin-bottom: auto;
+    gap: 5px;
+  }
+
+  .calendar-days {
+    gap: 2px;
+    width: auto;
+  }
+
+  .calendar-day-name {
+    font-size: 0.7em;
+  }
+}
+
+.calendar-form {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    align-self: center;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  input,
+  textarea {
+    margin-bottom: 20px;
+    padding: 1em 0.5em;
+    font-size: 1em;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  .invalid {
+    border: 1px solid $color-purple;
+  }
+  .btn-group {
+    display: flex;
+    margin: auto;
+    .button {
+      width: 100%;
+    }
+  }
+}

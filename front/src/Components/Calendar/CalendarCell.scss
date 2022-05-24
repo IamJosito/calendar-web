@@ -1,0 +1,90 @@
+@import "/src/Styles/main";
+.calendar-cell {
+  transition: 0.1s ease all;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 5px;
+  background-color: $color-light-grey;
+  border: 1px solid $color-grey;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    background-color: $color-light-grey-2;
+  }
+  &:active {
+    background-color: $color-grey;
+    border: 1px solid $color-purple;
+  }
+  &.active {
+    border: 1px solid $color-purple;
+  }
+  .calendar-events {
+    width: 90%;
+    max-width: 150px;
+    margin: 5px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    .calendar-event {
+      padding: 5px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      &.self {
+        background-color: $color-light-blue;
+      }
+      &.other {
+        background-color: $color-purple;
+      }
+      &.more {
+        width: 50%;
+        background-color: $color-light-blue;
+        align-self: center;
+        font-size: 0.7em;
+        padding-top: 0;
+        margin-top: 5px;
+        border-radius: 5px;
+        text-align: center;
+        &:hover {
+          background-color: $color-light-blue-transparent-60;
+        }
+      }
+      &.invisible {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.date-number {
+  margin: 5px 5px 0 auto;
+  width: 12px;
+  background-color: $color-light-blue;
+  color: white;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .date-number {
+    margin: 0 auto;
+    height: auto;
+    width: 16px;
+    height: 16px;
+  }
+  .calendar-events {
+    .calendar-event {
+      &.self,
+      &.other {
+        display: none;
+      }
+      &.more {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

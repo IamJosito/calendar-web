@@ -1,0 +1,86 @@
+{
+  "login": {
+    "title": "Login",
+    "username-placeholder": "Your username",
+    "password-placeholder": "Your password",
+    "button": "Login",
+    "link": "Don't have an account?",
+    "error-msg-login": "Username or password incorrect."
+  },
+  "register": {
+    "title": "Register",
+    "name-placeholder": "First name",
+    "surname-placeholder": "Last name",
+    "mail-placeholder": "Email",
+    "username-placeholder": "Your username",
+    "password-placeholder": "Your password",
+    "repeat-password-placeholder": "Repeat password",
+    "button": "Register",
+    "error-msg-fields": "Please fill all the fields.",
+    "error-msg-passwords": "Both passwords must match.",
+    "error-msg-repeated-user": "User exist.",
+    "link": "Have an account?"
+  },
+  "modal": {
+    "input-new-calendar": "New calendar name.",
+    "calendar-title": "Event for {{date}}",
+    "calendar-event-title": "Calendar title",
+    "calendar-event-description": "Calendar description",
+    "invitation-link": "Invitation Link",
+    "copy-link": "Copy Link"
+  },
+  "buttons": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "invite-friend": "Invite friends",
+    "delete-calendar": "Delete calendar",
+    "yes": "Yes",
+    "no": "No",
+    "exit": "Exit",
+    "update": "Update",
+    "delete": "Delete"
+  },
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "weekdays": {
+    "sunday": "Sunday",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "thursday": "Thursday",
+    "wednesday": "Wednesday",
+    "friday": "Friday",
+    "saturday": "Saturday"
+  },
+  "invite": {
+    "text": "is inviting you to its calendar",
+    "error": "This calendar does not exist, check that the invitation is valid."
+  },
+  "calendar": {
+    "delete-friend-text": "Do you want to delete {{friend}} from this calendar?",
+    "modal-delete-friend": "Someone delete you from this calendar.",
+    "modal-delete-calendar": "Someone delete this calendar.",
+    "friends-title": "Friends",
+    "toast-friend-delete": "{{friend}} has been removed from this calendar."
+  },
+  "main-calendar": {
+    "new-calendar": "New calendar"
+  },
+  "toast": {
+    "copy-to-clipboard": "Copy to the clipboard"
+  },
+  "confirm-delete":"CONFIRM",
+  "confirm-text-1":"Please, type",
+  "confirm-text-2":"to delete this calendar"
+}

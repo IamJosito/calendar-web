@@ -1,0 +1,46 @@
+@import '/src/Styles/main';
+.header {
+    background-color: $color-purple;
+    height: $header-height;
+    color:$color-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & > ul{
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        user-select: none;
+        & > .language {
+            cursor: pointer;
+        }
+        & > .active {
+            text-decoration: underline;
+            
+        }
+    }
+
+    & > .logout{
+        border: 2px solid;
+        padding: 5px 15px;
+        border-radius: 15px;
+        user-select: none;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-white-transparent-80;
+            color: $color-purple;
+        }
+        &:active {
+            background-color: $color-white;
+            color: $color-purple;
+        }
+    }
+
+    &>.logo{
+        cursor: pointer;
+        &>img {
+            width: 50px;
+        }
+    }
+}

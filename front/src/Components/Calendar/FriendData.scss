@@ -1,0 +1,30 @@
+@import "/src/Styles/main";
+
+.friend-data {
+  margin: 0 10px;
+  width: 80%;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.1s all ease;
+  display: flex;
+  align-items: center;
+  & > span {
+    width: 80%;
+  }
+  & > .delete {
+    margin-left: auto;
+    margin-right: 10px;
+    display: none;
+  }
+  &:hover:not(.your-data), &:active:not(.your-data) {
+    background-color: $color-purple;
+    color: $color-white;
+    .delete {
+      display: block;
+    }
+  }
+}
+.friend-data:not(.your-data) {
+  cursor: pointer;
+}

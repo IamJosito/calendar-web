@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import "/src/Styles/main";
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 75%;
+  max-width: 400px;
+  padding: 0 10px;
+  box-shadow: 0px 0px 10px 0px #000000;
+  border-radius: 10px;
+  &--header {
+    background-color: $color-purple;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    font-weight: 500;
+    justify-content: center;
+    gap: 10px;
+    color: $color-white;
+  }
+  &--body {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 0 0 10px 10px;
+    & > .user-data {
+      font-weight: 300;
+      outline: none;
+      padding: 10px;
+      border-radius: 100px;
+      border: 1px solid $color-black-transparent-30;
+      width: 75%;
+      align-self: center;
+      text-align: center;
+    }
+    & > button {
+      margin: 10px 0;
+      width: 50%;
+      align-self: center;
+      border-radius: 20px;
+      border: none;
+      padding: 10px;
+      background-color: $color-light-blue;
+      color: $color-white;
+      font-weight: 500;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:active {
+        background-color: $color-light-blue-transparent-60;
+      }
+    }
+    & > a {
+      margin: 0 0 20px 0;
+      align-self: center;
+      width: fit-content;
+      padding: 10px;
+      &:visited {
+        color: inherit;
+      }
+      &:active {
+        color: $color-purple;
+      }
+    }
+    .input-error {
+      border: 1px solid $color-purple;
+    }
+  }
+}
