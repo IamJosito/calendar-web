@@ -124,16 +124,16 @@ io.on("connection", (socket) => {
     const sql = `DELETE FROM events WHERE id=${payload.eventToEdit.id}`;
     const [rows, fields] = await con.execute(sql);
     emitToAll(payload.hash, rows, "delete-event");
-  })
+  });
 
-  socket.on("delete-calendar", async(hash) => {
+  socket.on("delete-calendar", async (hash) => {
     const calendar = await getCalendarByHash(hash);
     let sql = `DELETE FROM events WHERE calendar=${calendar.id}`;
     let [rows, fields] = await con.execute(sql);
     sql = `DELETE FROM calendars WHERE hash='${hash}'`;
     [rows, fields] = await con.execute(sql);
     emitToAll(hash, rows, "delete-calendar");
-  })
+  });
 
   function emitToAll(hash, rows, eventName) {
     // Create new room
