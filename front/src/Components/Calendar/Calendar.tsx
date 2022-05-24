@@ -141,10 +141,10 @@ export default function Calendar() {
     await setDeleteCalendarModal(false);
   }
 
-  async function openDeleteCalendar(){
+  async function openDeleteCalendar() {
     setDeleteCalendarIsOpen(true);
   }
-  async function closeDeleteCalendar(){
+  async function closeDeleteCalendar() {
     setDeleteCalendarIsOpen(false);
     navigate("/home");
   }
@@ -163,7 +163,7 @@ export default function Calendar() {
     await socket.emit("get-events-in-the-calendar", hash);
   }
 
-  async function deleteCalendar(){
+  async function deleteCalendar() {
     await socket.emit("delete-calendar", hash);
   }
 
@@ -737,7 +737,7 @@ export default function Calendar() {
           <GrClose />
         </span>
         <div className="modal-body invite-body">
-          <ConfirmationForm deleteCalendar={deleteCalendar}/>
+          <ConfirmationForm deleteCalendar={deleteCalendar} />
         </div>
       </Modal>
       <Modal

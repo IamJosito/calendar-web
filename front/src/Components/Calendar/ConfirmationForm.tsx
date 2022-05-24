@@ -5,12 +5,12 @@ import { socket } from "../../Services/socket";
 import Button from "../Button/Button";
 import "./ConfirmationForm.scss";
 
-export default function ConfirmationForm(props:any) {
+export default function ConfirmationForm(props: any) {
   const deleteWord = t(translations.CONFIRM_DELETE).toString();
   const [word, setWord] = useState("");
 
-  function checkWord(){
-    if(word === deleteWord){
+  function checkWord() {
+    if (word === deleteWord) {
       props.deleteCalendar();
     }
   }
@@ -22,8 +22,12 @@ export default function ConfirmationForm(props:any) {
         <span className="delete-word">{deleteWord}</span>
         <span>{t(translations.CONFIRM_TEXT_2)}</span>
       </div>
-      <input type="text" onChange={(e)=>setWord(e.target.value.trim())}/>
-      <Button className="cancel" onClick={checkWord} text={t(translations.BUTTON_DELETE_CALENDAR)}/>
+      <input type="text" onChange={(e) => setWord(e.target.value.trim())} />
+      <Button
+        className="cancel"
+        onClick={checkWord}
+        text={t(translations.BUTTON_DELETE_CALENDAR)}
+      />
     </div>
   );
 }
